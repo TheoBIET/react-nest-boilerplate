@@ -10,7 +10,13 @@ async function bootstrap() {
   const host = envService.get('API_HOST');
   const prefix = envService.get('API_PREFIX');
 
+  app.useLogger([envService.get('LOG_LEVEL')]);
   app.setGlobalPrefix(prefix);
+
+  app.enableCors({
+    origin: envService.get('CORS_ORIGIN'),
+    methods: envService.get('CORS_ALLOWED_METHODS'),
+  });
 
   await app.listen(port, host);
   Logger.debug(

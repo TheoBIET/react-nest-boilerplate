@@ -15,7 +15,10 @@
     "boilerplate"
   ],
   "scripts": {
-    "dev": "pnpm --filter @workspace/* dev",
+    "build:prisma": "pnpm --filter @workspace/prisma build",
+    "dev:api": "pnpm --filter @workspace/api dev",
+    "dev:client": "pnpm --filter @workspace/client dev",
+    "dev": "pnpm run build:prisma && pnpm run dev:api && pnpm run dev:client",
     "build": "pnpm --filter @workspace/* build"
   }
 }
