@@ -1,7 +1,9 @@
 {
-  "name": "client",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@workspace/client",
+  "version": "0.0.1",
+  "description": "Client application using React",
+  "author": "TheoBIET",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

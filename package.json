@@ -13,5 +13,9 @@
     "nestjs",
     "monorepo",
     "boilerplate"
-  ]
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @workspace/* dev",
+    "build": "pnpm --filter @workspace/* build"
+  }
 }
