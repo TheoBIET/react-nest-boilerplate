@@ -1,0 +1,17 @@
+{
+  "name": "nx-react-nest-boilerplate",
+  "packageManager": "pnpm@10.10.0",
+  "version": "1.0.0",
+  "description": "Modern monorepo boilerplate for React and NestJS applications using Nx",
+  "repository": "https://github.com/TheoBIET/react-nest-boilerplate.git",
+  "author": "TheoBIET",
+  "main": "index.js",
+  "license": "ISC",
+  "keywords": [
+    "nx",
+    "react",
+    "nestjs",
+    "monorepo",
+    "boilerplate"
+  ]
+}
